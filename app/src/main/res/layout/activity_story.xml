@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:id="@+id/main"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/wall2"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"
+            android:weightSum="5"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/story_fill"
+                android:layout_marginHorizontal="2dp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/story_fill"
+                android:layout_marginHorizontal="2dp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/story"
+                android:layout_marginHorizontal="2dp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/story"
+                android:layout_marginHorizontal="2dp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/story"
+                android:layout_marginHorizontal="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="10">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/profile3"
+                app:civ_border_width="0dp"
+                app:civ_circle_background_color="#AFAFAF"
+                app:civ_border_color="#AFAFAF"
+                android:layout_weight="2"
+                android:layout_gravity="left"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="craig_love"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 4h "
+                        android:layout_gravity="center"
+                        android:textColor="#AAAAAA"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/close"
+                android:id="@+id/back_button"
+                android:padding="20dp"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/send_message"
+                android:padding="10dp"
+                app:tint="#765341" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/send_no_text"
+                android:padding="18dp"
+                app:tint="#765341" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/options"
+                android:padding="6dp"
+                app:tint="#765341" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/browse"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/send"
+                android:padding="5dp"
+                android:layout_marginTop="8dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/more"
+                android:padding="8dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

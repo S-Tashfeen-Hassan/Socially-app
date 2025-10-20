@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Socially">
+        <activity
+            android:name=".pre_login"
+            android:exported="false" />
+        <activity
+            android:name=".sign_up"
+            android:exported="false" />
+        <activity
+            android:name=".log_in"
+            android:exported="false" />
+        <activity
+            android:name=".your_profile"
+            android:exported="false" />
+        <activity
+            android:name=".your_story"
+            android:exported="false" />
+        <activity
+            android:name=".story_post"
+            android:exported="false" />
+        <activity
+            android:name=".story"
+            android:exported="false" />
+        <activity
+            android:name=".camera"
+            android:exported="false" />
+        <activity
+            android:name=".post"
+            android:exported="false" />
+        <activity
+            android:name=".profile_details"
+            android:exported="false" />
+        <activity
+            android:name=".story_edit"
+            android:exported="false" />
+        <activity
+            android:name=".edit_profile"
+            android:exported="false" />
+        <activity
+            android:name=".activity_you"
+            android:exported="false" />
+        <activity
+            android:name=".activity"
+            android:exported="false" />
+        <activity
+            android:name=".call"
+            android:exported="false" />
+        <activity
+            android:name=".Chat"
+            android:exported="false" />
+        <activity
+            android:name=".messages"
+            android:exported="false" />
+        <activity
+            android:name=".search"
+            android:exported="false" />
+        <activity
+            android:name=".for_you_page"
+            android:exported="false" />
+        <activity
+            android:name=".home_screen"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

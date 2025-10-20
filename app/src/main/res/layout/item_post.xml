@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:background="@color/white">
+
+    <!-- Post Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/post_profile_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile1"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/brown" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="8dp">
+
+            <TextView
+                android:id="@+id/post_username"
+                android:text="Username"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/post_location"
+                android:text="Location (optional)"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/grey" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/post_options"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/options"
+            app:tint="@color/grey" />
+    </LinearLayout>
+
+    <!-- Post Image -->
+    <ImageView
+        android:id="@+id/post_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tokyo" />
+
+    <!-- Post Actions -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/like_button"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/like"
+            app:tint="@color/brown" />
+
+        <ImageView
+            android:id="@+id/comment_button"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/comment" />
+
+        <ImageView
+            android:id="@+id/share_button"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/share" />
+    </LinearLayout>
+
+    <!-- Caption -->
+
+    <!-- Likes -->
+    <TextView
+        android:id="@+id/post_likes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="8dp"
+        android:paddingBottom="12dp"
+        android:text="Liked by 44,686 others"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/post_caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="8dp"
+        android:paddingBottom="4dp"
+        android:text="This is a sample caption."
+        android:textSize="14sp" />
+</LinearLayout>

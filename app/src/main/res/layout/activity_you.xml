@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:background="#FFFFFF"
+    android:weightSum="25">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="10"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Following"
+            android:textStyle="bold"
+            android:id="@+id/switch_tabs"
+            android:textColor="@color/brown"
+            android:textSize="16sp"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:text="You"
+                android:textColor="@color/brown"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <ImageView
+                android:layout_weight="0.1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/line"
+                app:tint="@color/brown" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_weight="0.05"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/line"
+            app:tint="#DEDEDE" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingLeft="20dp"
+            android:text="Follow Requests"
+            android:textColor="#B85450"
+            android:layout_weight="0.9"
+            android:textSize="16sp"
+            android:gravity="center_vertical" />
+        <ImageView
+            android:layout_weight="0.05"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/line"
+            app:tint="#DEDEDE" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="New"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/profile2"
+            app:civ_border_width="0dp"
+            app:civ_circle_background_color="#AFAFAF"
+            app:civ_border_color="#AFAFAF"
+            android:layout_weight="1.5"
+            android:padding="5dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.5"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="__karennne"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:gravity="center_vertical" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" liked your photo."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:gravity="center_vertical" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" 1h"
+                android:textColor="@color/grey"
+                android:textSize="14sp"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_gravity="right"
+            android:src="@drawable/tokyo"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="8dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="1"
+        >
+        <ImageView
+            android:layout_weight="0.05"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/line"
+            android:scaleType="centerCrop"
+            app:tint="#DEDEDE" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Today"
+            android:paddingLeft="20dp"
+            android:layout_weight="0.95"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:src="@drawable/profiles"
+            android:layout_marginRight="12dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="kiero_d, zackjohn"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_gravity="bottom"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" and "
+                    android:textColor="#000000"
+                    android:layout_gravity="bottom"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="26 others "
+                    android:layout_gravity="bottom"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" liked your photos. "
+                    android:layout_gravity="top"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 3h"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:src="@drawable/tokyo"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="8dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="1"
+        >
+        <ImageView
+            android:layout_weight="0.05"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/line"
+            android:scaleType="centerCrop"
+            app:tint="#DEDEDE" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="This Week"
+            android:paddingLeft="20dp"
+            android:layout_weight="0.95"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/profile3"
+            app:civ_border_width="0dp"
+            app:civ_circle_background_color="#AFAFAF"
+            app:civ_border_color="#AFAFAF"
+            android:layout_weight="1.5"
+            android:padding="5dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.5"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="craig_love"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" mentioned you in a "
+                        android:textColor="#000000"
+                        android:layout_gravity="bottom"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="coment: "
+                        android:layout_gravity="top"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" @jacob_w"
+                        android:textColor="#6060FF"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" exactly.."
+                        android:layout_gravity="top"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:weightSum="2"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="💫  2d"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="♡          Reply"
+                    android:textColor="#666666"
+                    android:textSize="10sp"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="8dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:src="@drawable/wall2"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="8dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/profile1"
+            app:civ_border_width="0dp"
+            app:civ_circle_background_color="#AFAFAF"
+            app:civ_border_color="#AFAFAF"
+            android:layout_weight="1.5"
+            android:padding="5dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.5"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="martini_rond"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" started "
+                        android:textColor="#000000"
+                        android:layout_gravity="bottom"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Following you "
+                        android:layout_gravity="top"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 3d"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:src="@drawable/message_button"
+            android:padding="13dp"
+            android:layout_marginLeft="8dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/profile5"
+            app:civ_border_width="0dp"
+            app:civ_circle_background_color="#AFAFAF"
+            app:civ_border_color="#AFAFAF"
+            android:layout_weight="1.5"
+            android:padding="5dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.5"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="maxjacobson"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" started "
+                        android:textColor="#000000"
+                        android:layout_gravity="bottom"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Following you "
+                        android:layout_gravity="top"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 3d"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:src="@drawable/message_button"
+            android:padding="13dp"
+            android:layout_marginLeft="8dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/profile4"
+            app:civ_border_width="0dp"
+            app:civ_circle_background_color="#AFAFAF"
+            app:civ_border_color="#AFAFAF"
+            android:layout_weight="1.5"
+            android:padding="5dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.5"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mis_potter"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" started "
+                        android:textColor="#000000"
+                        android:layout_gravity="bottom"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Following you "
+                        android:layout_gravity="top"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 3d"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:src="@drawable/follow_button"
+            android:padding="13dp"
+            android:layout_marginLeft="8dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="1"
+        >
+        <ImageView
+            android:layout_weight="0.05"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/line"
+            android:scaleType="centerCrop"
+            app:tint="#DEDEDE" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="This Month"
+            android:paddingLeft="20dp"
+            android:layout_weight="0.95"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/profile3"
+            app:civ_border_width="0dp"
+            app:civ_circle_background_color="#AFAFAF"
+            app:civ_border_color="#AFAFAF"
+            android:layout_weight="1.5"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8.5"
+            android:textStyle="bold"
+            android:text="zack_josh_lover started..."
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="0.75"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        >
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.75"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/home"
+            android:padding="4dp"
+            android:id="@+id/home_button"
+            android:paddingBottom="10dp"
+            android:layout_margin="8dp"
+            app:tint="@color/brown" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/search"
+            android:id="@+id/search_button"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/create"
+            android:scaleType="centerCrop"
+            android:id="@+id/create_button"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/full_heart"
+            android:padding="5dp"
+            android:layout_margin="8dp"
+            android:id="@+id/activity1"
+            app:tint="@color/brown" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/pp"
+            android:id="@+id/profile"
+            android:scaleType="centerCrop"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

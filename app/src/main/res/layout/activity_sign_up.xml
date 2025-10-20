@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/signup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="40dp"
+        android:weightSum="10">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:id="@+id/back_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="20dp"
+                    android:src="@drawable/back"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center"
+                    android:paddingTop="16dp"
+                    android:text="Socially"
+                    android:textColor="#FFFFFF"
+                    android:textSize="68sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Create An Account and Sign Up"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Profile Picture -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image3"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/signup_cam"
+                app:civ_border_color="#AFAFAF"
+                app:civ_border_width="0dp" />
+        </LinearLayout>
+
+        <!-- Input Fields -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp">
+
+            <!-- Username -->
+            <TextView
+                android:text="Username"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/username_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter username"
+                android:textColor="#FFFFFF"
+                android:inputType="textPersonName"
+                android:paddingBottom="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="16dp" />
+
+            <!-- First Name -->
+            <TextView
+                android:text="Your Name"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/first_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:textColor="#FFFFFF"
+                android:inputType="textPersonName"
+                android:paddingBottom="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Last Name -->
+            <TextView
+                android:text="Your Last Name"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/last_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:textColor="#FFFFFF"
+                android:inputType="textPersonName"
+                android:paddingBottom="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="16dp" />
+
+            <!-- DOB -->
+            <TextView
+                android:text="Date of Birth"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/dob_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="DD - MM - YYYY"
+                android:textColor="#FFFFFF"
+                android:inputType="date"
+                android:paddingBottom="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Email -->
+            <TextView
+                android:text="E-mail"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/email_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter E-mail"
+                android:textColor="#FFFFFF"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Password -->
+            <TextView
+                android:text="Password"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/password_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Password"
+                android:textColor="#FFFFFF"
+                android:inputType="textPassword"
+                android:paddingBottom="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="16dp" />
+        </LinearLayout>
+
+        <!-- Create Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/create_button_container"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#80FFFFFF">
+
+                <TextView
+                    android:id="@+id/create_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Create an Account"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
