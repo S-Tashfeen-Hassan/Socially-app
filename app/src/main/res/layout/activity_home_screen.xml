@@ -87,154 +87,237 @@
                         />
                 </LinearLayout>
             </LinearLayout>
-            <LinearLayout
+<!--            Apply Horizontal Scroll view-->
+            <!-- Apply Horizontal Scroll view -->
+            <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="3"
-                android:weightSum="4.5"
-                android:orientation="horizontal"
-                >
+                android:scrollbars="none"
+                android:overScrollMode="never">
+
                 <LinearLayout
-                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_width="0dp"
-                    android:orientation="vertical"
-                    android:weightSum="4"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:id="@+id/profile_image"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:src="@drawable/profile1"
-                        app:civ_border_width="4dp"
-                        app:civ_border_color="#6228d7"
-                        android:layout_weight="4"
-                        android:padding="5dp"
-                        />
-                    <TextView
-                        android:layout_weight="1"
-                        android:text="Your Story"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:gravity="center"
-                        android:layout_below="@id/profile_image"
-                        />
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/profile_image"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/profile1"
+                            app:civ_border_width="4dp"
+                            app:civ_border_color="#6228d7"
+                            android:padding="5dp" />
+
+                        <TextView
+                            android:text="Your Story"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/profile_image2"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/profile2"
+                            app:civ_border_width="4dp"
+                            app:civ_border_color="#90EE90"
+                            android:padding="5dp" />
+
+                        <TextView
+                            android:text="___Karenne"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/profile_image3"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/profile3"
+                            app:civ_border_width="4dp"
+                            app:civ_border_color="#6228d7"
+                            android:padding="5dp" />
+
+                        <TextView
+                            android:text="Zack John"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/profile_image4"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/profile4"
+                            app:civ_border_width="4dp"
+                            app:civ_border_color="#6228d7"
+                            android:padding="5dp" />
+
+                        <TextView
+                            android:text="Lidiya"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/profile_image5"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/profile5"
+                            app:civ_border_width="4dp"
+                            app:civ_border_color="#90EE90"
+                            android:padding="5dp" />
+
+                        <TextView
+                            android:text="Craig_kamen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/profile2"
+                            app:civ_border_width="4dp"
+                            app:civ_border_color="#90EE90"
+                            android:padding="5dp" />
+
+                        <TextView
+                            android:text="___Karenne"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/profile3"
+                            app:civ_border_width="4dp"
+                            app:civ_border_color="#6228d7"
+                            android:padding="5dp" />
+
+                        <TextView
+                            android:text="Zack John"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/profile4"
+                            app:civ_border_width="4dp"
+                            app:civ_border_color="#6228d7"
+                            android:padding="5dp" />
+
+                        <TextView
+                            android:text="Lidiya"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/profile5"
+                            app:civ_border_width="4dp"
+                            app:civ_border_color="#90EE90"
+                            android:padding="5dp" />
+
+                        <TextView
+                            android:text="Craig_kamen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
+
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:layout_height="match_parent"
-                    android:layout_width="0dp"
-                    android:orientation="vertical"
-                    android:weightSum="4"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:id="@+id/profile_image2"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:src="@drawable/profile2"
-                        app:civ_border_width="4dp"
-                        app:civ_border_color="#90EE90"
-                        android:layout_weight="4"
-                        android:padding="5dp"
-                        />
-                    <TextView
-                        android:layout_weight="1"
-                        android:text="___Karenne"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:gravity="center"
-                        android:layout_below="@id/profile_image2"
-                        />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:layout_height="match_parent"
-                    android:layout_width="0dp"
-                    android:orientation="vertical"
-                    android:weightSum="4"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:id="@+id/profile_image3"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:src="@drawable/profile3"
-                        app:civ_border_width="4dp"
-                        app:civ_border_color="#6228d7"
-                        android:layout_weight="4"
-                        android:padding="5dp"
-                        />
-                    <TextView
-                        android:layout_weight="1"
-                        android:text="Zack John"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:gravity="center"
-                        android:layout_below="@id/profile_image3"
-                        />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:layout_height="match_parent"
-                    android:layout_width="0dp"
-                    android:orientation="vertical"
-                    android:weightSum="4"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:id="@+id/profile_image4"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:src="@drawable/profile4"
-                        app:civ_border_width="4dp"
-                        app:civ_border_color="#6228d7"
-                        android:layout_weight="4"
-                        android:padding="5dp"
-                        />
-                    <TextView
-                        android:layout_weight="1"
-                        android:text="Lidiya"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:gravity="center"
-                        android:layout_below="@id/profile_image4"
-                        />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:layout_height="match_parent"
-                    android:layout_width="0dp"
-                    android:orientation="vertical"
-                    android:weightSum="4"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:id="@+id/profile_image5"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:src="@drawable/profile5"
-                        app:civ_border_width="4dp"
-                        app:civ_border_color="#90EE90"
-                        android:layout_weight="4"
-                        android:padding="5dp"
-                        />
-                    <TextView
-                        android:layout_weight="1"
-                        android:text="Craig_kamen"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:gravity="center"
-                        android:layout_below="@id/profile_image5"
-                        />
-                </LinearLayout>
-            </LinearLayout>
+
+            </HorizontalScrollView>
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
