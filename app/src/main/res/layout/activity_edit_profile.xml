@@ -57,6 +57,7 @@
             android:layout_weight="1"
             android:src="@drawable/menu"
             android:padding="8dp"
+            android:id="@+id/logout"
             android:layout_height="match_parent"
             app:tint="@color/brown" />
 

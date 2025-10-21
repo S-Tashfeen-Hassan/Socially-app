@@ -147,72 +147,146 @@
         android:orientation="vertical"
         android:weightSum="2">
 
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1.5"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:background="@drawable/chat_bar"-->
+<!--            android:paddingLeft="16dp"-->
+<!--            android:paddingRight="16dp"-->
+<!--            android:weightSum="10">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:id="@+id/open_camera"-->
+<!--                android:src="@drawable/round_filled_cam"/>-->
+
+<!--            <EditText-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="6"-->
+<!--                android:hint="Message..."-->
+<!--                android:textColor="#999999"-->
+<!--                android:textSize="16sp"-->
+<!--                android:paddingLeft="12dp"-->
+<!--                android:gravity="center_vertical" />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="3"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:gravity="center_vertical|right"-->
+<!--                android:weightSum="3"-->
+<!--                android:paddingLeft="8dp">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:src="@drawable/mic"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:padding="20dp"-->
+<!--                    />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:src="@drawable/gallery"-->
+<!--                    android:padding="3dp"-->
+<!--                    />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:src="@drawable/weird"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:padding="10dp"-->
+<!--                    />-->
+
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center_vertical"
             android:background="@drawable/chat_bar"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:weightSum="10">
+            android:padding="8dp"
+            android:gravity="center_vertical">
 
+            <!-- Camera -->
             <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:id="@+id/open_camera"
-                android:src="@drawable/round_filled_cam"/>
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/round_filled_cam"
+                android:padding="0dp"
+                app:tint="@color/brown" />
 
-            <TextView
+            <!-- Message Input -->
+            <EditText
+                android:id="@+id/message_input"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="6"
-                android:text="Message..."
-                android:textColor="#999999"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:hint="Message..."
+                android:background="#EBEBEB"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#999999"
                 android:textSize="16sp"
-                android:paddingLeft="12dp"
+                android:maxLines="4"
+                android:inputType="textMultiLine"
                 android:gravity="center_vertical" />
 
+            <!-- Mic / Attach buttons (start visible) -->
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="3"
+                android:id="@+id/icons_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="center_vertical|right"
-                android:weightSum="3"
-                android:paddingLeft="8dp">
+                android:gravity="center_vertical">
 
                 <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:src="@drawable/mic"
-                    android:scaleType="centerCrop"
-                    android:padding="20dp"
-                    />
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:src="@drawable/gallery"
-                    android:padding="3dp"
-                    />
+                    android:padding="8dp"
+                    app:tint="@color/brown" />
 
                 <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/mic"
+                    android:padding="0dp"
+                    app:tint="@color/brown" />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:src="@drawable/weird"
-                    android:scaleType="centerCrop"
-                    android:padding="10dp"
-                    />
-
+                    android:padding="0dp"
+                    app:tint="@color/brown" />
             </LinearLayout>
 
+            <!-- Send button (start hidden) -->
+            <ImageView
+                android:id="@+id/send_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/send"
+                android:padding="0dp"
+                android:visibility="gone"
+                app:tint="@color/brown" />
+
         </LinearLayout>
+
 
     </LinearLayout>
 
