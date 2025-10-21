@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.util.Base64
 import android.graphics.BitmapFactory
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -44,10 +45,11 @@ class UserAdapter(private val context: Context, private var users: List<User>)
                 e.printStackTrace()
             }
         }
-
+        Log.e("UserAdapter", "Sending UID=${user.uid} Name=${user.username}")
         holder.itemView.setOnClickListener {
             val intent = Intent(context, Chat::class.java)
             intent.putExtra("receiverUid", user.uid)
+            intent.putExtra("receiverName", user.username)
             context.startActivity(intent)
         }
 

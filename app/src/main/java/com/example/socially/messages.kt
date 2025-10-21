@@ -2,6 +2,7 @@ package com.example.socially
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -68,16 +69,22 @@ class messages : AppCompatActivity() {
 
                 for (userSnapshot in snapshot.children) {
                     val user = userSnapshot.getValue(User::class.java)
-                    // ✅ Skip current user based on username
+                    // Skip current user based on username
                     if (user != null && user.username != currentUsername) {
-                        userList.add(user)
+                        // Create a new User object with UID from Firebase key
+                        val userWithUid = user.copy(uid = userSnapshot.key)
+                        // Add the user with UID to the list
+                        userList.add(userWithUid)
                     }
                 }
 
                 adapter.notifyDataSetChanged()
             }
 
-            override fun onCancelled(error: DatabaseError) {}
+            override fun onCancelled(error: DatabaseError) {
+                // Optional: log error
+                Log.e("LoadUsers", "Failed to load users: ${error.message}")
+            }
         })
     }
 }
