@@ -14,92 +14,109 @@
         android:layout_weight="0.5"
         android:orientation="horizontal"
         android:weightSum="3"
-        android:padding="16dp"></LinearLayout>
+        android:padding="16dp" />
 
-    <LinearLayout
+    <!-- Story preview area -->
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="8"
-        android:background="@drawable/wall2"
-        android:orientation="vertical"
-        android:weightSum="10">
+        android:layout_weight="8">
 
+        <!-- 🖼️ Background image (selected from gallery) -->
+        <ImageView
+            android:id="@+id/storyBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:contentDescription="Story Image" />
+
+        <!-- Overlay with top toolbar and other UI -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:weightSum="8"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10"
+            android:background="@android:color/transparent">
 
-            <ImageView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:id="@+id/back_button"
-                android:src="@drawable/close_round"
-                android:padding="8dp"
-                app:tint="#ad7f5f" />
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
-                />
-            <ImageView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/partnership"
-                android:padding="6dp"
-                app:tint="#ad7f5f"
-                />
-            <ImageView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/aa"
-                android:padding="6dp"
-                app:tint="#ad7f5f"
-                />
-            <ImageView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/stickers"
-                android:padding="6dp"
-                app:tint="#ad7f5f"
-                />
-            <ImageView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/music_round"
-                android:padding="6dp"
-                app:tint="#ad7f5f"
-                />
-            <ImageView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/filters"
-                android:padding="6dp"
-                app:tint="#ad7f5f"
-                />
-            <ImageView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/options_round"
-                android:padding="4dp"
-                app:tint="#ad7f5f"
-                />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_weight="7.5"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            />
-    </LinearLayout>
+                android:weightSum="8"
+                android:orientation="horizontal">
 
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/back_button"
+                    android:src="@drawable/close_round"
+                    android:padding="8dp"
+                    app:tint="#ad7f5f" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/partnership"
+                    android:padding="6dp"
+                    app:tint="#ad7f5f" />
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/aa"
+                    android:padding="6dp"
+                    app:tint="#ad7f5f" />
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/stickers"
+                    android:padding="6dp"
+                    app:tint="#ad7f5f" />
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/music_round"
+                    android:padding="6dp"
+                    app:tint="#ad7f5f" />
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/filters"
+                    android:padding="6dp"
+                    app:tint="#ad7f5f" />
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/options_round"
+                    android:padding="4dp"
+                    app:tint="#ad7f5f" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7.5" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Bottom toolbar -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -110,42 +127,44 @@
         android:layout_marginTop="5dp"
         android:gravity="center_vertical"
         android:background="#000000">
+
         <LinearLayout
             android:layout_weight="2"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            >
-            <ImageView
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/postStory"
+                android:backgroundTint="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/your_story"
-                android:padding="3dp"
-                />
+                android:padding="3dp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_weight="2"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="match_parent">
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/close_friends"
-                android:padding="3dp"
-                />
+                android:padding="3dp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="match_parent">
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/back2"
                 android:src="@drawable/next_round"
-                android:padding="7dp"
-                />
+                android:padding="7dp" />
         </LinearLayout>
     </LinearLayout>
 
